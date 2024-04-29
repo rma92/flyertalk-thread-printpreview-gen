@@ -1,0 +1,17 @@
+//Use jsdom to get images and links
+    //Get all images
+    var imgTags = dom.window.document.querySelectorAll('img');
+    var imgUrls = Array.from(imgTags).map(img => img.src);
+    console.log('Image URLs:');
+    imgUrls.forEach(url => console.log(url));
+
+    //Get all links
+    var allLinks = dom.window.document.querySelectorAll('a');
+allLinks.forEach((link, index) =>
+    {
+      var linkText = link.textContent.trim();
+      var linkId = index + 1; // Assuming IDs start from 1
+      var linkUrl = link.href;
+
+      console.log(`Link ${linkId}: Text: "${linkText}", URL: ${linkUrl}`);
+    });

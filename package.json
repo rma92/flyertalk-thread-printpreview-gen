@@ -1,0 +1,17 @@
+{
+  "name": "flyertalk-preview-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "axios": "^1.6.8",
+    "jsdom": "^24.0.0"
+  }
+}
